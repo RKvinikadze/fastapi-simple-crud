@@ -14,9 +14,9 @@ You need to install project requirements with command:
 
 `pip install -r requirements.txt`
 
-And then, run project on localhost:8000 with:
+And then, run project on port 8000 with:
 
-`uvicorn app.main:app --reload`
+`uvicorn app.main:app --reload --port 8000`
 
 ## Run with Docker
 ---
