@@ -1,4 +1,4 @@
-# [REST with FastAPI](https://xelladze22-simple-crud.herokuapp.com/)
+# REST with FastAPI
 
 simple REST api using fastapi.
 
