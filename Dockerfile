@@ -1,13 +1,7 @@
-FROM python:3.8-alpine
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
-WORKDIR /usr/src/app
+COPY ./requirements.txt /app/requirements.txt
 
-COPY ./requirements.txt .
+RUN pip install -r /app/requirements.txt
 
-RUN pip install -r requirements.txt
-
-COPY . .
-
-EXPOSE 8000
-
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+COPY /app /app/app
