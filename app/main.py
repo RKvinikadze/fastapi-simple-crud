@@ -16,7 +16,7 @@ async def ping():
 
 @app.get("/healthcheck")
 async def healthcheck():
-    return {"message", "healthy"}
+    return {"message": "healthy"}
 
 @app.get("/api/v1/authors")
 async def all_authors():
