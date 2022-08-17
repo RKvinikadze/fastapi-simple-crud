@@ -14,6 +14,10 @@ async def hello():
 async def ping():
     return {"message": "pong"}
 
+@app.get("/healthcheck")
+async def healthcheck():
+    return {"message", "healthy"}
+
 @app.get("/api/v1/authors")
 async def all_authors():
     return {"data" : list(authors.values())}
