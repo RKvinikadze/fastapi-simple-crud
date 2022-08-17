@@ -4,7 +4,7 @@ simple REST api using fastapi.
 
 # Preconditions
 
-Install [python 3](https://www.python.org/downloads/)
+Install [Python3](https://www.python.org/downloads/)
 
 Check python version with `python --version`
 
